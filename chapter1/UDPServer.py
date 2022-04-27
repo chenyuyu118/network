@@ -3,6 +3,7 @@ from socket import AF_INET, SOCK_DGRAM, socket
 
 server_port = 12000
 
+<<<<<<< HEAD
 socket1 = socket(AF_INET, SOCK_DGRAM)
 socket1.bind(('', server_port))
 print("The server is ready to receive")
@@ -11,3 +12,4 @@ while True:
     print("recv from " + str(ip[0]) + ":" + str(ip[1]) + " " + meg.decode())
     modifiedMeg = meg.decode().upper()
     socket1.sendto(modifiedMeg.encode(), ip)
+
