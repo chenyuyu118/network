@@ -1,10 +1,8 @@
-import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
-import java.util.Locale;
 import java.util.Random;
 
 public class UDPPingServer {
@@ -12,7 +10,7 @@ public class UDPPingServer {
 
     public static void main(String[] args) throws SocketException {
         DatagramSocket server = new DatagramSocket(SERVER_PORT);
-        System.out.println("UDP·þÎñÆ÷ÒÑ¾­Æô¶¯");
+        System.out.println("UDPï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½");
         byte[] data = new byte[1024];
         while (!server.isClosed()) {
             DatagramPacket packet = new DatagramPacket(data, data.length);

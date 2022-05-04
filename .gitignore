@@ -25,6 +25,6 @@ hs_err_pid*
 
 # idea IDE file
 .idea/
-chapter1.iml
+*.iml
 out/
 
